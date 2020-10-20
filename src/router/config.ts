@@ -17,8 +17,13 @@ import Testlook from '@/view/home/Testlook'
 import Useradd from '@/view/home/Useradd'
 import Usershow from '@/view/home/Usershow'
 
+
 import Examadd from '@/view/home/Examadd'
 import Examlist from '@/view/home/Examlist'
+//新建试卷
+import ExamNew from '@/view/home/ExamNew'
+// 试卷详情
+import ExamDetail from '@/view/home/ExamDetail'
 
 import Class from '@/view/home/Class'
 import Classroom from '@/view/home/Classroom'
@@ -72,9 +77,14 @@ const router = [
                 component: Examlist
             },
             {
-                path: '/home/examlist',
-                name: 'Examlist',
-                component: Examlist
+                path: '/home/examDetail',
+                name: 'ExamDetail',
+                component: ExamDetail
+            },
+            {
+                path: '/home/examNew',
+                name: 'ExamNew',
+                component: ExamNew
             },
             {
                 path: '/home/class',

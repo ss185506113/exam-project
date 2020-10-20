@@ -14,6 +14,7 @@ const request = axios.create({
 
 //拦截请求
 request.interceptors.request.use(config => {
+    console.log(localStorage.getItem('token'))
     const token = localStorage.getItem('token');
     config.headers.authorization = token;
     return config;
