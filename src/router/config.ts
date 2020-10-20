@@ -8,6 +8,7 @@
  */
 import Home from '@/view/Home'
 import Detail from '@/view/Detail'
+import Login from '@/view/Login'
 
 // 引入2级路由
 import Testadd from '@/view/home/Testadd'
@@ -29,7 +30,7 @@ import Waitclass from '@/view/home/Waitclass'
 const router = [
     {
         path: '/',
-        redirect: '/home'
+        redirect: '/login'
     },
     {
         path: '/home',
@@ -102,6 +103,10 @@ const router = [
         path: '/detail',
         name: 'Detail',
         component: Detail
+    },{
+        path:'/login',
+        name:'Login',
+        component:Login
     }
 ];
 
